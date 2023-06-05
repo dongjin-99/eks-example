@@ -4,7 +4,7 @@ metadata:
   name: nginx-blue
   namespace: test
 spec:
-  replicas: 2
+  replicas: 3
   template:
     spec:
       containers:
