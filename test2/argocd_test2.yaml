@@ -18,6 +18,8 @@ spec:
         image: nginx:1.21.1
         ports:
           - containerPort: 80
+            name: http
+            protocol: TCP
         resources:
           requests:
             memory: "64Mi"
