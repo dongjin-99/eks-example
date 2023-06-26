@@ -4,7 +4,7 @@ metadata:
   name: rollout-hpa-migration
 spec:
   maxReplicas: 10
-  minReplicas: 3
+  minReplicas: 1
   scaleTargetRef:
     apiVersion: argoproj.io/v1alpha1
     kind: Rollout
