@@ -5,7 +5,7 @@ metadata:
   namespace: test
   annotations: {}
 spec:
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 10
   strategy:
     blueGreen:
