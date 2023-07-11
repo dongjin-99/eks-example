@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: nginx-blue
-  replicas: 0
+  replicas: 2
   template:
     metadata:
       labels:
