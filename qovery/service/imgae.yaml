@@ -1,0 +1,4 @@
+image:
+  repository: docker.io/library/nginx
+  tag: latest
+  pullPolicy: Always

@@ -1,0 +1,34 @@
+############ Managed by Developer ############
+
+## Kind:Deployment Settings
+### Deployent Enabled: true ###
+deployment:
+  enabled: true
+  name: test-nginx
+
+# Deployment spec
+replicaCount: 1
+revisionHistoryLimit: 10
+
+# Deployment spec.template.spec.containers
+## CONTAINER SETTING
+container:
+  name: nginx
+
+############ Managed by DevOps ############
+
+# Name Settings 
+nameOverride: "test-nginx"
+fullnameOverride: ""
+
+# Common Label Settings
+# metadata.labels
+labels:
+  helm.sh/chart: test-nginx
+  app.kubernetes.io/managed-by: Helm
+  app.kubernetes.io/name: test-nginx
+  environment: dev
+
+## Deployment spec.selector.matchLabels
+matchLabels:
+  app.kubernetes.io/name: test-nginx
