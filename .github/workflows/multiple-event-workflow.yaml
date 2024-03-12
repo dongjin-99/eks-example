@@ -1,8 +1,8 @@
 name: multipole-event-workflow
 on:
   push:
-  issue:
-    types: [opend]
+  issues:
+    types: [opened]
   workflow_dispatch:
 jobs:
   test-job:
