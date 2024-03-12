@@ -1,0 +1,13 @@
+name: context-test
+on: push
+
+jobs:
+  github-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check context
+        run: |
+          echo '{{ toJson(github) }}'
+      - name: check specific context
+        run: |
+          echo '{{ github.repository }}'
