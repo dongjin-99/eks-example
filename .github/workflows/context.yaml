@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: check context
         run: |
-          echo '{{ toJson(github) }}'
+          echo '${{ toJson(github) }}'
       - name: check specific context
         run: |
-          echo '{{ github.repository }}'
+          echo '${{ github.repository }}'
